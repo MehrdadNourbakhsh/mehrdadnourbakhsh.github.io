@@ -18,7 +18,7 @@ const Hero = () => {
             {/* </div> */}
             <NavbarDemo/>
             <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center
-            justify-center gap-4'>
+            justify-center gap-3'>
 
                 <div>
                     <Image src='/globe.svg' alt='' width={50} height={50} className='rounded-full w-32'/>

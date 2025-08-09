@@ -42,6 +42,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+  --font-outfit: 'Outfit', serif;
 
 }
 
@@ -142,4 +143,7 @@
 
 *{
   font-family: Outfit;
+}
+.font-outfit {
+  font-family: var(--font-outfit);
 }
