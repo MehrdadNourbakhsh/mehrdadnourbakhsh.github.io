@@ -23,6 +23,14 @@ export function NavbarDemo() {
         link: "#works",
     },
     {
+        name: "Research",
+        link: "#research",
+    },
+    {
+        name: "Projects",
+        link: "#projects",
+    },
+    {
         name: "Contact",
         link: "#contact",
     },

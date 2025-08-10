@@ -14,7 +14,7 @@ const Hero = () => {
             {/* <div className='relative top-0 right-0'> */}
             {/* <Spotlight className="top-0 left-0 md:-left-32 md:-top-20 h-screen" fill="purple"/>
             <Spotlight className="h-[80vh] top-10 left-200" fill="blue"/> */}
-            <Spotlight className="left-150 top-28 h-[80vh] w-[50vw] md:left-120 md:top-28 " fill="white" />
+            <Spotlight className="h-[80vh] w-full sm:left-0 sm:top-80 md:top-70 md:left-0 lg:left-40 lg:top-80 xl:left-60 xl:top-30 2xl:left-120 2xl:top-30 " fill="white" />
             {/* </div> */}
             <NavbarDemo/>
             <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center

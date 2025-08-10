@@ -1,5 +1,7 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import Research from "@/components/Research";
 import Works from "@/components/Works";
 
 
@@ -10,6 +12,8 @@ export default function Home() {
       <Hero/>
       <About/>
       <Works/>
+      <Research/>
+      <Projects/>
     </>
   );
 }

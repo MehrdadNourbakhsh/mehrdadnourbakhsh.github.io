@@ -6,14 +6,14 @@ import Image from 'next/image'
 const Works = () => {
     return (
         
-        <div id='works' className='w-full px-[12%] py-16 scroll-mt-20'>
+        <div id='works' className='w-full px-[12%] py-16  scroll-mt-20'>
             <h2 className='text-center text-5xl'>My work experience</h2>
             <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
                 {workExperience.map((card) => (
                     <Button
                     key = {card.id}
                     borderRadius="1.75rem"
-                    className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                    className="flex-1 bg-zinc-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
                     duration={Math.floor(Math.random() * 10000) + 10000}
                     
                     >

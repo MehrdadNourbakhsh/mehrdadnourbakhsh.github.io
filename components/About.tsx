@@ -5,7 +5,7 @@ import { GlowingEffect } from './ui/glowing-effect'
 const About = () => {
     return (
 
-        <div id='about' className='w-full px-[12%] pt-6 pb-24 scroll-mt-20 '>
+        <div id='about' className='w-full px-[12%] pt-6 pb-24 scroll-mt-20'>
 
             {/* <h4 className='text-center mb-2 text-lg'>Intro</h4> */}
             <h2 className='text-center text-5xl'>About me</h2>
