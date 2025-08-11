@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Connect from "@/components/Connect";
 import Hero from "@/components/Hero";
 import Miscellaneous from "@/components/Miscellaneous";
 import Projects from "@/components/Projects";
@@ -16,6 +17,7 @@ export default function Home() {
       <Research/>
       <Projects/>
       <Miscellaneous/>
+      <Connect/>
     </>
   );
 }

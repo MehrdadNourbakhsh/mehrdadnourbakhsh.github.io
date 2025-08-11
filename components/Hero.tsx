@@ -6,7 +6,7 @@ import MagicButton from './ui/MagicButton'
 
 
 import { NavbarDemo } from "@/components/Navbar";
-import { FaLocationArrow } from 'react-icons/fa'
+import { FaRegFilePdf } from 'react-icons/fa6'
 
 const Hero = () => {
     return (
@@ -38,7 +38,7 @@ const Hero = () => {
                 <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                     <MagicButton otherClasses='px-10 py-3' 
                         title="My resume"
-                        icon={<FaLocationArrow/>}
+                        icon={<FaRegFilePdf/>}
                         position='left'
                     />
                 </div>

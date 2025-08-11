@@ -11,6 +11,7 @@ import {
     MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import { CiLight } from "react-icons/ci"
 
 export function NavbarDemo() {
     const navItems = [
@@ -34,6 +35,10 @@ export function NavbarDemo() {
         name: "Miscellaneous",
         link: "#miscellaneous",
     },
+    {
+        name: "Connect",
+        link: "#connect",
+    },
     ];
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -46,8 +51,7 @@ export function NavbarDemo() {
             <NavbarLogo />
             <NavItems items={navItems} />
             <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Contact</NavbarButton>
-            {/* <NavbarButton variant="primary">Book a call</NavbarButton> */}
+                <CiLight />
             </div>
         </NavBody>
 
@@ -81,7 +85,7 @@ export function NavbarDemo() {
                 variant="primary"
                 className="w-full"
                 >
-                Contact
+                Connect
                 </NavbarButton>
                 {/* <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
