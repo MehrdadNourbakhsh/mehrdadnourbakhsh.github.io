@@ -9,8 +9,9 @@ const Projects = () => {
             <h2 className='text-center text-6xl'>
                 Projects
             </h2>
-
-            <AnimatedTestimonials testimonials={testimonials} />
+            <div className='pt-12'>
+                <AnimatedTestimonials testimonials={testimonials} />
+            </div>
         </div>
     )
 }
