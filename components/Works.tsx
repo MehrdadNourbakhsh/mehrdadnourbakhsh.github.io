@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from './ui/moving-border'
-import { FaLaptopCode } from 'react-icons/fa6'
+
 import Image from 'next/image'
 
 const Works = () => {
@@ -21,12 +21,13 @@ const Works = () => {
                             <Image className='lg:w-32 md:w-20 w-16'
                                 src = '/developer.svg'
                                 alt = ''
-                                width={40} height={40}
+                                width={35} height={35}
                             />
                             <div className="lg:ms-5">
-                                <h4 className='text-start text-xl md:text-xl font-outfit'>{card.title} - {card.company}</h4>
-                                <p className="text-start text-white-100 mt-3 font-outfit">
-                                    {card.desc}
+                                <h3 className='text-start text-xl md:text-xl font-outfit'>{card.title}</h3>
+                                <h4 className='text-start text-lg md:text-base font-outfit'>{card.company}</h4>
+                                <p className="text-start text-white-100 mt-3 font-outfit text-gray-500">
+                                    {card.duration}
                                 </p>
                             </div>
                         </div>
@@ -45,30 +46,26 @@ const workExperience = [
         id: 1,
         title: 'Software Developer',
         company: 'University of Tehran',
-        desc: 'using vue',
-        duration: 'fall 2024'
+        duration: 'Sep 2023 - Sep 2024'
 
     },
     {
         id: 2,
-        title: 'Backend developer',
-        company: 'Synapps',
-        desc: 'using python',
-        duration: 'mar 2020'
+        title: 'Backend Developer',
+        company: 'SynApps',
+        duration: 'Mar 2020 - Nov 2020'
     },
     {
         id: 3,
-        title: 'Backend developer',
-        company: 'Synapps',
-        desc: 'using python',
-        duration: 'mar 2020'
+        title: 'Backend Developer Intern',
+        company: 'Authin',
+        duration: 'July 2019 - Sep 2019'
     },
     {
         id: 4,
-        title: 'Backend developer',
-        company: 'Synapps',
-        desc: 'using python',
-        duration: 'mar 2020'
+        title: 'Frontnd Developer',
+        company: 'Fojhun Exsom',
+        duration: 'July 2017 - Nov 2018'
     }
 ]
 

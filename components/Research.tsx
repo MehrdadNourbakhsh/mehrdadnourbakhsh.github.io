@@ -17,48 +17,79 @@ const Research = () => {
                 experience
             </h2>
 
-            <div className='w-full mt-12 grid lg:grid-cols-3 grid-cols-1 gap-4'>
+            <div className='w-full mt-12 grid lg:grid-cols-2 grid-cols-1 gap-4'>
                 <WobbleCard
-                    containerClassName="col-span-1 lg:col-span-2 h-full bg-zinc-800 min-h-[500px] lg:min-h-[300px]"
+                    containerClassName="col-span-1 lg:col-span-1 h-full bg-zinc-800 min-h-[500px] lg:min-h-[300px]"
                     className=""
                 >
-                    <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                        No shirt, no shoes, no weapons.
-                    </h2>
+                    <div className="flex items-center justify-between py-2">
+                        <div className="flex items-center gap-4">
+                            <div className="flex flex-col">
+                            <h3 className="text-lg">Graduate Researcher</h3>
+                            <h4 className="text-sm text-gray-500">University of Tehran, Iran</h4>
+                            </div>
+                        </div>
+                        <div className="text-sm text-gray-500">
+                            Sep 2022 – Sep 2024
+                        </div>
+                    </div>
+                    <p className='text-justify'>
+                        Researched security threats in federated learning (FL) and created a GNN-based anomaly detection framework to defend against backdoor attacks in FL. Achieved lower attack success rates while keeping model accuracy high.
+                    </p>
+                    
+                </WobbleCard>
+                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-800">
+                    <div className="flex items-center justify-between py-2">
+                            <div className="flex items-center gap-4">
+                                <div className="flex flex-col">
+                                <h3 className="text-lg">Graduate Researcher</h3>
+                                <h4 className="text-sm text-gray-500">University of Alberta, Canada (Remote)</h4>
+                                </div>
+                            </div>
+                            <div className="text-sm text-gray-500">
+                                Mar 2025 – Sep 2025
+                            </div>
+                    </div>
+                    <p className='text-justify'>
+                        Researched GNN approaches for fraud and anomaly detection in financial networks, identified key gaps, and helped design and prototype methods for classifying suspicious transactions.
+                    </p>
+                </WobbleCard>
+                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-800">
+                    <div className="flex items-center justify-between py-2">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex flex-col">
+                                    <h3 className="text-lg">Undergraduate Researcher</h3>
+                                    <h4 className="text-sm text-gray-500">University of Tehran, Iran</h4>
+                                    </div>
+                                </div>
+                                <div className="text-sm text-gray-500">
+                                    July 2020 – March 2021
+                                </div>
+                    </div>
+                    <p className='text-justify'>
+                            Developed and simulated embedded systems in Simulink using the Model-Based Design approach. Built and tested controllers with HIL, SIL, and MIL evaluations, and created virtual environments for cyber-physical system simulation.
+                    </p>
+                </WobbleCard>
+                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-800">
+                    <div className="flex items-center justify-between py-2">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex flex-col">
+                                    <h3 className="text-lg">Teaching Assistant</h3>
+                                    <h4 className="text-sm text-gray-500">University of Tehran, Iran</h4>
+                                    </div>
+                                </div>
+                                <div className="text-sm text-gray-500">
+                                    2020 – 2024
+                                </div>
+                    </div>
                     <p className=''>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
-                    </p>
-                </WobbleCard>
-                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-800">
-                    <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                    No shirt, no shoes, no weapons.
-                    </h2>
-                    <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                    If someone yells “stop!”, goes limp, or taps out, the fight is over.
-                    </p>
-                </WobbleCard>
-                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-800">
-                    <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                    No shirt, no shoes, no weapons.
-                    </h2>
-                    <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                    If someone yells “stop!”, goes limp, or taps out, the fight is over.
-                    </p>
-                </WobbleCard>
-                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-800">
-                    <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                    No shirt, no shoes, no weapons.
-                    </h2>
-                    <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                    If someone yells “stop!”, goes limp, or taps out, the fight is over.
-                    </p>
-                </WobbleCard>
-                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-800">
-                    <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                    No shirt, no shoes, no weapons.
-                    </h2>
-                    <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                    If someone yells “stop!”, goes limp, or taps out, the fight is over.
+                        <ul>
+                            <li>
+                                Deep Neural Networks - Dr. Ahmad Kalhor
+                            </li>
+                            <li>Statistical Inference - Dr. Behnam Bahrak</li>
+                            <li>Real-Time Embedded Systems - Dr. Mehdi Kargahi</li>
+                        </ul>
                     </p>
                 </WobbleCard>
             </div>
