@@ -18,19 +18,19 @@ const Hero = () => {
             {/* </div> */}
             <NavbarDemo/>
             <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center
-            justify-center gap-3'>
+            justify-center gap-3 dark:bg-neutral-900'>
 
                 <div>
                     <Image src='/globe.svg' alt='' width={50} height={50} className='rounded-full w-32'/>
                 </div>
-                <h3 className='flex item-end gap-2 text-x md:text-2xl mb-3'>
+                {/* <h3 className='flex item-end gap-2 text-x md:text-2xl mb-3'>
                     <TextGenerateEffect
                             words="Mehrdad Nourbakhsh"
                             className="text-center text-[40px] md:text-5xl lg:text-6xl font-Ovo"
                     />
-                </h3>
-                <h1 className='text-2xl sm:text-6xl lg:text-[66px]'>
-                    Master Student
+                </h3> */}
+                <h1 className='text-2xl sm:text-6xl lg:text-[66px] mt-4'>
+                    Mehrdad Nourbakhsh
                 </h1>
                 <p className='max-w-2xl mx-auto'>
                     Tehran

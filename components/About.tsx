@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { GlowingEffect } from './ui/glowing-effect'
 import { AnimatedTooltip } from './ui/animated-tooltip'
 
 const About = () => {
@@ -11,64 +10,59 @@ const About = () => {
             {/* <h4 className='text-center mb-2 text-lg'>Intro</h4> */}
             <h2 className='text-center text-5xl'>About me</h2>
 
-            <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
-                <div className='w-64 sm:w-80 rounded-2xl max-w-none'>
-                    <Image src='/globe.svg' alt='' width={50} height={50} className='rounded-3xl w-full'/>
+            <div className='flex w-full flex-col lg:flex-row items-start gap-20 my-20'>
+                <div className='relative w-64 sm:w-80 h-64 sm:h-80 rounded-xl overflow-hidden max-w-none'>
+                    <Image src='/profile.png' alt='' fill className='rounded-3xl w-full object-cover'/>
                 </div>
                 <div className='flex-1'>
-                    <p className='mb-10 max-w-2xl'>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+                    <p className='max-w-2xl text-justify'>
+                        Hi! I&apos;m Mehrdad, a computer engineer and AI researcher. I&apos;m currently interested in how we can make machine learning systems more secure, private, and reliable, especially in areas like federated learning, distributed learning, and edge AI. I hold an MSc in Software Engineering from the University of Tehran, where my research focused on mitigating the impact of backdoor attacks in federated learning. Prior to that, I earned my Bachelor&apos;s in Computer Engineering at the same university.
                     </p>
-                    <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
-                        <li className=''>
-                            <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
-                                <GlowingEffect
-                                blur={0}
-                                borderWidth={3}
-                                spread={80}
-                                glow={true}
-                                disabled={false}
-                                proximity={64}
-                                inactiveZone={0.01}
-                                />
-                                <h3>Education</h3>
-                                <p>University of Tehran</p>
+                    <p className='mb-10 max-w-2xl text-justify'>
+                        Outside of research, I love building software that people actually enjoy using. Whether it&apos;s experimenting with a new framework, diving into an unfamiliar programming language, or turning an idea into a working prototype, I&apos;m always exploring ways to turn technology into impactful, practical, and sometimes even fun solutions to real-world problems.
+                    </p>
+                    
+                    <ul className='grid grid-cols-1  gap-6 max-w-2xl'>
+                        <li className='col-span-1'>
+                            <div className="relative p-3">
+                                <h2 className='font-semibold text-center'>Education</h2>
+                                <div className="flex items-center justify-between py-2">
+                                    <div className="flex items-center gap-4">
+                                        <Image src="/ut.svg" alt="" width={40} height={40} />
+                                        <div className="flex flex-col">
+                                        <h3 className="text-lg">University of Tehran</h3>
+                                        <h4 className="text-sm text-gray-500">MSc - Software Engineering</h4>
+                                        </div>
+                                    </div>
+                                    <div className="text-sm text-gray-500">
+                                        2021 – 2024
+                                    </div>
+                                </div>
+                                <div className="flex items-center justify-between py-2">
+                                    <div className="flex items-center gap-4">
+                                        <Image src="/ut.svg" alt="" width={40} height={40} />
+                                        <div className="flex flex-col">
+                                        <h3 className="text-lg">University of Tehran</h3>
+                                        <h4 className="text-sm text-gray-500">BSc - Computer Engineering</h4>
+                                        </div>
+                                    </div>
+                                    <div className="text-sm text-gray-500">
+                                        2015 – 2021
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <li>
-                        <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
-                                <GlowingEffect
-                                blur={0}
-                                borderWidth={3}
-                                spread={80}
-                                glow={true}
-                                disabled={false}
-                                proximity={64}
-                                inactiveZone={0.01}
-                                />
-                                <h3>Education</h3>
-                                <p>University of Tehran</p>
+                        <li className='font-semibold text-center'>
+                            <div className="relative p-3">
+                                <h2 className='font-semibold text-center'>Tools & Technologies</h2>
+                                <div className="relative justify-center flex flex-row mt-8 mb-10 w-full">
+                                    <AnimatedTooltip items={toolsArray} />
+                                </div>
                             </div>
                         </li>
-                        <li>
-                        <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
-                                <GlowingEffect
-                                blur={0}
-                                borderWidth={3}
-                                spread={80}
-                                glow={true}
-                                disabled={false}
-                                proximity={64}
-                                inactiveZone={0.01}
-                                />
-                                <h3>Education</h3>
-                                <p>University of Tehran</p>
-                            </div>
-                        </li>
+
                     </ul>
-                    <div className="relative flex flex-row mt-10 mb-10 w-full">
-                        <AnimatedTooltip items={people} />
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -77,47 +71,65 @@ const About = () => {
 
 export default About
 
-const people = [
+const toolsArray = [
     {
         id: 1,
-        name: "John Doe",
-        designation: "Software Engineer",
-        image:
-        "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
+        name: 'Python',
+        image: '/python.svg'
     },
     {
         id: 2,
-        name: "Robert Johnson",
-        designation: "Product Manager",
-        image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        name: 'Tensorflow',
+        image: '/tensorflow.svg'
     },
     {
         id: 3,
-        name: "Jane Smith",
-        designation: "Data Scientist",
-        image:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        name: 'Pytorch',
+        image: '/pytorch.svg'
     },
     {
         id: 4,
-        name: "Emily Davis",
-        designation: "UX Designer",
-        image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        name: 'Django',
+        image: '/django.svg'
     },
     {
         id: 5,
-        name: "Tyler Durden",
-        designation: "Soap Developer",
-        image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+        name: 'Node js',
+        image: '/node-js.svg'
     },
     {
-        id: 6,
-        name: "Dora",
-        designation: "The Explorer",
-        image:
-        "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80",
+        id: 7,
+        name: 'Typescript',
+        image: '/typescript.svg'
+    },
+    {
+        id: 8,
+        name: 'React',
+        image: '/react.svg'
+    },
+    {
+        id: 9,
+        name: 'Next js',
+        image: '/next.js.svg'
+    },
+    {
+        id: 10,
+        name: 'Vue js',
+        image: '/vue-js.svg'
+    },
+    {
+        id: 11,
+        name: 'Tailwind css',
+        image: '/tailwind-css.svg'
+    },
+    {
+        id: 12,
+        name: 'Java',
+        image: '/java.svg'
+    },
+    {
+        id: 13,
+        name: 'R',
+        image: '/r-project.svg'
     },
 ];
