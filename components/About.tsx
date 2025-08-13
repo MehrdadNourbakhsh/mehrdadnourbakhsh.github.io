@@ -114,7 +114,7 @@ const toolsArray = [
     },
     {
         id: 10,
-        name: 'Vue js',
+        name: 'Vue',
         image: '/vue-js.svg'
     },
     {

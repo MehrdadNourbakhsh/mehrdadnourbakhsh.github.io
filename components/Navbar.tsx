@@ -85,7 +85,7 @@ export function NavbarDemo() {
                 variant="primary"
                 className="w-full"
                 >
-                Connect
+                <CiLight />
                 </NavbarButton>
                 {/* <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
