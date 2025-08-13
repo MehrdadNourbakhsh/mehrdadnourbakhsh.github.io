@@ -30,7 +30,7 @@ const Research = () => {
                             </div>
                         </div>
                         <div className="text-sm text-gray-500">
-                            Sep 2022 – Sep 2024
+                            Sep. 2022 – Sep. 2024
                         </div>
                     </div>
                     <p className='text-justify'>
@@ -47,7 +47,7 @@ const Research = () => {
                                 </div>
                             </div>
                             <div className="text-sm text-gray-500">
-                                Mar 2025 – Sep 2025
+                                March 2025 – Sep. 2025
                             </div>
                     </div>
                     <p className='text-justify'>

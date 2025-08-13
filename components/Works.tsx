@@ -46,26 +46,26 @@ const workExperience = [
         id: 1,
         title: 'Software Developer',
         company: 'University of Tehran',
-        duration: 'Sep 2023 - Sep 2024'
+        duration: 'Sep. 2023 - Sep. 2024'
 
     },
     {
         id: 2,
         title: 'Backend Developer',
         company: 'SynApps',
-        duration: 'Mar 2020 - Nov 2020'
+        duration: 'March 2020 - Oct. 2020'
     },
     {
         id: 3,
         title: 'Backend Developer Intern',
         company: 'Authin',
-        duration: 'July 2019 - Sep 2019'
+        duration: 'July 2019 - Sep. 2019'
     },
     {
         id: 4,
         title: 'Frontnd Developer',
         company: 'Fojhun Exsom',
-        duration: 'July 2017 - Nov 2018'
+        duration: 'July 2017 - Nov. 2018'
     }
 ]
 

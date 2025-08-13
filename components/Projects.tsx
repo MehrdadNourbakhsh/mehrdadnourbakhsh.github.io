@@ -21,43 +21,38 @@ export default Projects
 
 const testimonials = [
     {
-        quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-        name: "Sarah Chen",
-        designation: "Product Manager at TechFlow",
-        src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        url: "https://github.com"
+        quote: 'Built a job offer web app with Java (Spring) backend, React frontend, JPA database, and security features like JWT, Docker, and Kubernetes.',
+        name: 'JobOonja',
+        designation: 'Java, JavaScript, Spring, React',
+        src: '/joboonja.png',
+        url: 'https://github.com/MehrdadNourbakhsh/IE_CA'
     },
     {
-        quote:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.",
-        name: "Michael Rodriguez",
-        designation: "CTO at InnovateSphere",
-        src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        url: "https://github.com"
+        quote: 'Collected and processed speech data for emotion recognition, extracting features like Chroma and Zero Crossing Rate. Developed machine learning models using KNN, SVM, and MLP for classification, and applied clustering methods such as K-Means and DBSCAN to analyze emotions like Anger, Disgust, and Sadness.',
+        name: 'Speech emotion recognition',
+        designation: 'Python, Librosa',
+        src: '/ser.png',
+        url: 'https://github.com/MehrdadNourbakhsh'
     },
     {
-        quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-        name: "Emily Watson",
-        designation: "Operations Director at CloudScale",
-        src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        url: "https://github.com"
+        quote: 'Implemented BERT from scratch, constructing all Transformer components, including the encoder and multi-head attention mechanisms, to gain a deeper understanding of its core functionality',
+        name: "BERT Implementation From Scratch",
+        designation: "Python,Tensorflow",
+        src: '/transformer.png',
+        url: 'https://github.com/MehrdadNourbakhsh/NN_CA5'
     },
     {
-        quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-        name: "James Kim",
-        designation: "Engineering Lead at DataPro",
-        src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        url: "https://github.com"
+        quote: 'Implemented Deep Convolutional GAN from scratch, optimizing training with label smoothing, batch normalization, and noise addition. Also developed a Wasserstein GAN (WGAN) with customized loss functions to enhance performance.',
+        name: "GAN Implementation",
+        designation: "Python,Tensorflow",
+        src: 'dcgan.png',
+        url: 'https://github.com/MehrdadNourbakhsh/NN_CA6'
     },
     {
-        quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-        name: "Lisa Thompson",
-        designation: "VP of Technology at FutureNet",
-        src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        url: "https://github.com"
+        quote: 'Gained insights into Bitcoin mechanics by generating valid testnet addresses using SHA-256 and RIPEMD-160, simulating transactions with python-bitcoinlib, and testing the mining process with real blockchain data.',
+        name: 'Testnet Network',
+        designation: 'Python, python-bitcoinlib',
+        src: '/testnet.png',
+        url: "https://github.com/MehrdadNourbakhsh/Crypto_CA"
     },
     ];
