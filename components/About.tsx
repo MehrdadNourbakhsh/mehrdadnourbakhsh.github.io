@@ -12,7 +12,7 @@ const About = () => {
 
             <div className='flex w-full flex-col lg:flex-row items-start gap-20 my-20'>
                 <div className='relative sm:items-center sm:justify-center w-64 sm:w-80 h-64 sm:h-80 rounded-xl overflow-hidden max-w-none'>
-                    <Image src='/profile.png' alt='' fill className='rounded-3xl w-full object-cover'/>
+                    <Image src='/profile.png' alt='' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-3xl w-full object-cover'/>
                 </div>
                 <div className='flex-1'>
                     <p className='max-w-2xl text-justify'>

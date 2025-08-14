@@ -13,7 +13,7 @@ const Works = () => {
                     <Button
                     key = {card.id}
                     borderRadius="1.75rem"
-                    className="flex-1 bg-zinc-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                    className="flex-1 bg-neutral-300 dark:bg-zinc-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
                     duration={Math.floor(Math.random() * 10000) + 10000}
                     
                     >

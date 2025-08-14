@@ -3,10 +3,11 @@ import React from 'react'
 import { motion } from 'motion/react'
 import { MdEmail } from "react-icons/md"
 
-// import Image from 'next/image'
 
 const Connect = () => {
 
+    
+    
     return (
         
         <div id='connect' className='w-full px-[12%] py-16  scroll-mt-20'>
@@ -14,12 +15,12 @@ const Connect = () => {
                 Connect
             </h2>
             
-            <h4 className="text-lg md:text-2xl text-white text-center py-4">
+            <h4 className="text-lg md:text-2xl  text-center py-4">
                 Let&apos;s get in touch!
             </h4>
             <div className="flex items-center justify-center space-x-2 py-4">
-                <MdEmail className="text-white text-xl" />
-                <h4 className="text-md md:text-xl text-white">
+                <MdEmail className=" text-xl" />
+                <h4 className="text-md md:text-xl ">
                     mehrdad.nb4@gmail.com
                 </h4>
             </div>
@@ -48,7 +49,8 @@ const Connect = () => {
                             alt=""
                             width="50"
                             height="50"
-                            className="object-cover shrink-0 gap-4"
+                            className="object-cover shrink-0 gap-4 bg-zinc-500 dark:bg-zinc-900 rounded-3xl"
+                            
                             />
                     </a>
                     </motion.div>

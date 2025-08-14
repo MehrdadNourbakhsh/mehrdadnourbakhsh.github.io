@@ -19,7 +19,7 @@ const Research = () => {
 
             <div className='w-full mt-12 grid lg:grid-cols-2 grid-cols-1 gap-4'>
                 <WobbleCard
-                    containerClassName="col-span-1 lg:col-span-1 h-full bg-zinc-800 min-h-[500px] lg:min-h-[300px]"
+                    containerClassName="col-span-1 lg:col-span-1 h-full bg-neutral-300 dark:bg-zinc-800 min-h-[500px] lg:min-h-[300px]"
                     className=""
                 >
                     <div className="flex items-center justify-between py-2">
@@ -38,7 +38,7 @@ const Research = () => {
                     </p>
                     
                 </WobbleCard>
-                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-800">
+                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-neutral-300 dark:bg-zinc-800">
                     <div className="flex items-center justify-between py-2">
                             <div className="flex items-center gap-4">
                                 <div className="flex flex-col">
@@ -54,7 +54,7 @@ const Research = () => {
                         Researched GNN approaches for fraud and anomaly detection in financial networks, identified key gaps, and helped design and prototype methods for classifying suspicious transactions.
                     </p>
                 </WobbleCard>
-                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-800">
+                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-neutral-300 dark:bg-zinc-800">
                     <div className="flex items-center justify-between py-2">
                                 <div className="flex items-center gap-4">
                                     <div className="flex flex-col">
@@ -70,7 +70,7 @@ const Research = () => {
                             Developed and simulated embedded systems in Simulink using the Model-Based Design approach. Built and tested controllers with HIL, SIL, and MIL evaluations, and created virtual environments for cyber-physical system simulation.
                     </p>
                 </WobbleCard>
-                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-800">
+                <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-neutral-300 dark:bg-zinc-800">
                     <div className="flex items-center justify-between py-2">
                                 <div className="flex items-center gap-4">
                                     <div className="flex flex-col">

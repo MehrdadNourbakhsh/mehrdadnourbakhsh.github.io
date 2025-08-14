@@ -243,7 +243,7 @@ export const NavbarLogo = () => {
         height={30}
         className="rounded-md"
       />
-      <span className="font-medium text-black dark:text-white">Mehrdad Nourbakhsh</span>
+      {/* <span className="font-medium text-black dark:text-white">Mehrdad Nourbakhsh</span> */}
     </a>
   );
 };

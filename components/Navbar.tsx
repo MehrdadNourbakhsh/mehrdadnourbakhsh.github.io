@@ -11,7 +11,8 @@ import {
     MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
-import { CiLight } from "react-icons/ci"
+import { FaSun,FaMoon } from "react-icons/fa";
+import { useTheme } from "next-themes"
 
 export function NavbarDemo() {
     const navItems = [
@@ -42,64 +43,74 @@ export function NavbarDemo() {
     ];
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { setTheme } = useTheme()
 
     return (
-    <div className="relative w-full">
-        <Navbar>
-        {/* Desktop Navigation */}
-        <NavBody>
-            <NavbarLogo />
-            <NavItems items={navItems} />
-            <div className="flex items-center gap-4">
-                <CiLight />
-            </div>
-        </NavBody>
 
-        {/* Mobile Navigation */}
-        <MobileNav>
-            <MobileNavHeader>
-            <NavbarLogo />
-            <MobileNavToggle
+        <div className="relative w-full">
+            <Navbar className="fixed top-0 w-full">
+            {/* Desktop Navigation */}
+            <NavBody>
+                <NavbarLogo />
+                <NavItems items={navItems} />
+                <div className="flex items-center gap-4">
+                    <FaMoon className="absolute scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" onClick={() => setTheme("light")}/>
+                    <FaSun className="scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" onClick={() => setTheme("dark")}/>
+                </div>
+            </NavBody>
+
+            {/* Mobile Navigation */}
+            <MobileNav>
+                <MobileNavHeader>
+                <NavbarLogo />
+                <MobileNavToggle
+                    isOpen={isMobileMenuOpen}
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                />
+                </MobileNavHeader>
+
+                <MobileNavMenu
                 isOpen={isMobileMenuOpen}
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            />
-            </MobileNavHeader>
-
-            <MobileNavMenu
-            isOpen={isMobileMenuOpen}
-            onClose={() => setIsMobileMenuOpen(false)}
-            >
-            {navItems.map((item, idx) => (
-                <a
-                key={`mobile-link-${idx}`}
-                href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
+                onClose={() => setIsMobileMenuOpen(false)}
                 >
-                <span className="block">{item.name}</span>
-                </a>
-            ))}
-            <div className="flex w-full flex-col gap-4">
-                <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-                >
-                <CiLight />
-                </NavbarButton>
-                {/* <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-                >
-                Book a call
-                </NavbarButton> */}
-            </div>
-            </MobileNavMenu>
-        </MobileNav>
-        </Navbar>
-        
-        {/* Navbar */}
-    </div>
+                {navItems.map((item, idx) => (
+                    <a
+                    key={`mobile-link-${idx}`}
+                    href={item.link}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="relative text-neutral-600 dark:text-neutral-300"
+                    >
+                    <span className="block">{item.name}</span>
+                    </a>
+                ))}
+                <div className="flex w-full flex-col gap-4 items-center justify-center">
+                    <NavbarButton
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    variant="primary"
+                    className="w-full flex items-center justify-center relative"
+                    >
+                    <FaMoon
+                        className="scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0"
+                        onClick={() => setTheme("light")}
+                    />
+                    <FaSun
+                        className="scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"
+                        onClick={() => setTheme("dark")}
+                    />
+                    </NavbarButton>
+                    {/* <NavbarButton
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    variant="primary"
+                    className="w-full"
+                    >
+                    Book a call
+                    </NavbarButton> */}
+                </div>
+                </MobileNavMenu>
+            </MobileNav>
+            </Navbar>
+            
+            {/* Navbar */}
+        </div>
     );
 }

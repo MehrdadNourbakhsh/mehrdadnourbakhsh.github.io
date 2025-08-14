@@ -9,7 +9,7 @@ import { motion } from 'motion/react';
 
 const Hero = () => {
     return (
-        <>
+        <div>
             <NavbarDemo/>
             <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center
             justify-center gap-3 dark:bg-neutral-900'>
@@ -70,7 +70,7 @@ const Hero = () => {
             </div>
             
             
-        </>
+        </div>
 
     )
 }
