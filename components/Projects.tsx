@@ -29,14 +29,14 @@ const testimonials = [
     },
     {
         quote: 'Collected and processed speech data for emotion recognition, extracting features like Chroma and Zero Crossing Rate. Developed machine learning models using KNN, SVM, and MLP for classification, and applied clustering methods such as K-Means and DBSCAN to analyze emotions like Anger, Disgust, and Sadness.',
-        name: 'Speech emotion recognition',
+        name: 'Speech Emotion Recognition',
         designation: 'Python, Librosa',
         src: '/ser.png',
         url: 'https://github.com/MehrdadNourbakhsh'
     },
     {
         quote: 'Implemented BERT from scratch, constructing all Transformer components, including the encoder and multi-head attention mechanisms, to gain a deeper understanding of its core functionality',
-        name: "BERT Implementation From Scratch",
+        name: "BERT Implementation from Scratch",
         designation: "Python,Tensorflow",
         src: '/transformer.png',
         url: 'https://github.com/MehrdadNourbakhsh/NN_CA5'

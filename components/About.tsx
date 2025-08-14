@@ -11,7 +11,7 @@ const About = () => {
             <h2 className='text-center text-5xl'>About me</h2>
 
             <div className='flex w-full flex-col lg:flex-row items-start gap-20 my-20'>
-                <div className='relative w-64 sm:w-80 h-64 sm:h-80 rounded-xl overflow-hidden max-w-none'>
+                <div className='relative sm:items-center sm:justify-center w-64 sm:w-80 h-64 sm:h-80 rounded-xl overflow-hidden max-w-none'>
                     <Image src='/profile.png' alt='' fill className='rounded-3xl w-full object-cover'/>
                 </div>
                 <div className='flex-1'>

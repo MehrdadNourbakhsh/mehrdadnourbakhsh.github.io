@@ -82,15 +82,15 @@ const Research = () => {
                                     2020 – 2024
                                 </div>
                     </div>
-                    <p className=''>
-                        <ul>
-                            <li>
-                                Deep Neural Networks - Dr. Ahmad Kalhor
-                            </li>
-                            <li>Statistical Inference - Dr. Behnam Bahrak</li>
-                            <li>Real-Time Embedded Systems - Dr. Mehdi Kargahi</li>
-                        </ul>
-                    </p>
+                    
+                    <ul>
+                        <li>
+                            Deep Neural Networks - Dr. Ahmad Kalhor
+                        </li>
+                        <li>Statistical Inference - Dr. Behnam Bahrak</li>
+                        <li>Real-Time Embedded Systems - Dr. Mehdi Kargahi</li>
+                    </ul>
+                    
                 </WobbleCard>
             </div>
         </div>

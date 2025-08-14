@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Connect from "@/components/Connect";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Miscellaneous from "@/components/Miscellaneous";
 import Projects from "@/components/Projects";
@@ -18,6 +19,7 @@ export default function Home() {
       <Projects/>
       <Miscellaneous/>
       <Connect/>
+      <Footer/>
     </>
   );
 }
