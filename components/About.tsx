@@ -12,7 +12,7 @@ const About = () => {
 
             <div className='flex w-full flex-col lg:flex-row items-start gap-20 my-20'>
                 <div className='relative sm:items-center sm:justify-center w-64 sm:w-80 h-64 sm:h-80 rounded-xl overflow-hidden max-w-none'>
-                    <Image src='/profile.png' alt='' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-3xl w-full object-cover'/>
+                    <Image src='profile.png' alt='' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-3xl w-full object-cover'/>
                 </div>
                 <div className='flex-1'>
                     <p className='max-w-2xl text-justify'>
@@ -28,7 +28,7 @@ const About = () => {
                                 <h2 className='font-semibold text-center'>Education</h2>
                                 <div className="flex items-center justify-between py-2">
                                     <div className="flex items-center gap-4">
-                                        <Image src="/ut.svg" alt="" width={40} height={40} />
+                                        <Image src="ut.svg" alt="" width={40} height={40} />
                                         <div className="flex flex-col">
                                         <h3 className="text-lg">University of Tehran</h3>
                                         <h4 className="text-sm text-gray-500">MSc - Software Engineering</h4>
@@ -40,7 +40,7 @@ const About = () => {
                                 </div>
                                 <div className="flex items-center justify-between py-2">
                                     <div className="flex items-center gap-4">
-                                        <Image src="/ut.svg" alt="" width={40} height={40} />
+                                        <Image src="ut.svg" alt="" width={40} height={40} />
                                         <div className="flex flex-col">
                                         <h3 className="text-lg">University of Tehran</h3>
                                         <h4 className="text-sm text-gray-500">BSc - Computer Engineering</h4>

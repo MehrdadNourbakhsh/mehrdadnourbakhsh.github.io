@@ -65,19 +65,19 @@ export default Connect
 const images = [
     {
         url: 'https://github.com/mehrdadnourbakhsh',
-        image: '/github.svg'
+        image: 'github.svg'
     },
     {
         url: 'https://www.goodreads.com/mnourbakhsh',
-        image: '/goodreads.svg'
+        image: 'goodreads.svg'
     },
     {
         url: 'https://www.linkedin.com/in/mehrdad-nourbakhsh/',
-        image: '/linkedin.svg'
+        image: 'linkedin.svg'
     },
     {
         url: 'https://t.me/MNourbakhsh75',
-        image: '/telegram.svg'
+        image: 'telegram.svg'
     },
     
 ]
