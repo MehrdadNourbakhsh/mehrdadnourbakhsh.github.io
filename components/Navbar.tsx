@@ -98,13 +98,7 @@ export function NavbarDemo() {
                         onClick={() => setTheme("dark")}
                     />
                     </NavbarButton>
-                    {/* <NavbarButton
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    variant="primary"
-                    className="w-full"
-                    >
-                    Book a call
-                    </NavbarButton> */}
+                    
                 </div>
                 </MobileNavMenu>
             </MobileNav>

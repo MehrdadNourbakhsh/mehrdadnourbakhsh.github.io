@@ -2,7 +2,7 @@
 import React from 'react'
 import { motion } from 'motion/react'
 import { MdEmail } from "react-icons/md"
-
+import Image from 'next/image';
 
 const Connect = () => {
 
@@ -44,13 +44,12 @@ const Connect = () => {
                     className="overflow-hidden"
                     >
                     <a href={image.url} target='blank'>
-                        <img
+                        <Image
                             src={image.image}
                             alt=""
                             width="50"
                             height="50"
                             className="object-cover shrink-0 gap-4 bg-zinc-500 dark:bg-zinc-900 rounded-3xl"
-                            
                             />
                     </a>
                     </motion.div>
