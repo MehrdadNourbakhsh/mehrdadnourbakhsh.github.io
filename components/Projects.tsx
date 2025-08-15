@@ -27,7 +27,7 @@ const testimonials = [
         name: 'Portfolio',
         designation: 'TypeScript, Next.js, Tailwind CSS',
         src: 'myportfolio.png',
-        utl:'https://github.com/MehrdadNourbakhsh/portfolio'
+        url:'https://github.com/MehrdadNourbakhsh/portfolio'
     },
     {
         quote: 'Built a job offer web app with Java (Spring) backend, React frontend, JPA database, and security features like JWT, Docker, and Kubernetes.',
