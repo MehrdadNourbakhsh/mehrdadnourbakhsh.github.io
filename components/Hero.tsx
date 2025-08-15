@@ -61,7 +61,10 @@ const Hero = () => {
                     }}
                     className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
                     >
-                        <button className="flex items-center justify-center gap-2 w-40 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                        <button 
+                            className="flex items-center cursor-pointer justify-center gap-2 w-40 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+                            onClick={() => window.open('Mehrdad_Nourbakhsh_Resume.pdf', '_blank', 'noopener,noreferrer')}
+                            >
                             <FaRegFilePdf className="text-lg" />
                             My resume
                         </button>

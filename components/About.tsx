@@ -75,61 +75,61 @@ const toolsArray = [
     {
         id: 1,
         name: 'Python',
-        image: '/python.svg'
+        image: 'python.svg'
     },
     {
         id: 2,
         name: 'Tensorflow',
-        image: '/tensorflow.svg'
+        image: 'tensorflow.svg'
     },
     {
         id: 3,
         name: 'Pytorch',
-        image: '/pytorch.svg'
+        image: 'pytorch.svg'
     },
     {
         id: 4,
         name: 'Django',
-        image: '/django.svg'
+        image: 'django.svg'
     },
     {
         id: 5,
         name: 'Node js',
-        image: '/node-js.svg'
+        image: 'node-js.svg'
     },
     {
         id: 7,
         name: 'Typescript',
-        image: '/typescript.svg'
+        image: 'typescript.svg'
     },
     {
         id: 8,
         name: 'React',
-        image: '/react.svg'
+        image: 'react.svg'
     },
     {
         id: 9,
         name: 'Next js',
-        image: '/next.js.svg'
+        image: 'next.js.svg'
     },
     {
         id: 10,
         name: 'Vue',
-        image: '/vue-js.svg'
+        image: 'vue-js.svg'
     },
     {
         id: 11,
         name: 'Tailwind css',
-        image: '/tailwind-css.svg'
+        image: 'tailwind-css.svg'
     },
     {
         id: 12,
         name: 'Java',
-        image: '/java.svg'
+        image: 'java.svg'
     },
     {
         id: 13,
         name: 'R',
-        image: '/r-project.svg'
+        image: 'r-project.svg'
     },
 ];

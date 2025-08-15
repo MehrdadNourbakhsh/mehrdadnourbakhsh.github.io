@@ -23,6 +23,13 @@ export default Projects
 
 const testimonials = [
     {
+        quote: 'This project was an attempt to update my portfolio, refresh my knowledge of React, and deepen my skills in Next.js, TypeScript, Tailwind CSS, and modern UI component libraries such as Shadcn and Aceternity UI.',
+        name: 'Portfolio',
+        designation: 'TypeScript, Next.js, Tailwind CSS',
+        src: 'myportfolio.png',
+        utl:'https://github.com/MehrdadNourbakhsh/portfolio'
+    },
+    {
         quote: 'Built a job offer web app with Java (Spring) backend, React frontend, JPA database, and security features like JWT, Docker, and Kubernetes.',
         name: 'JobOonja',
         designation: 'Java, JavaScript, Spring, React',
