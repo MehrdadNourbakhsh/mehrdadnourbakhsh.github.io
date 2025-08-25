@@ -30,6 +30,13 @@ const testimonials = [
         url:'https://github.com/MehrdadNourbakhsh/portfolio'
     },
     {
+        quote: 'Developed a simple chatbot using the OpenAI API that creates a short user profile by asking targeted questions. The project aimed to build familiarity with the OpenAI API while gaining hands-on experience in chain-of-thought reasoning, function calling, and role prompting.',
+        name: 'Simple Chatbot',
+        designation: 'Python, OpenAI API, Flask',
+        src: 'chatbotUI.png',
+        url:'https://www.mehrdadn.info/simple-chatbot-ui'
+    },
+    {
         quote: 'Built a job offer web app with Java (Spring) backend, React frontend, JPA database, and security features like JWT, Docker, and Kubernetes.',
         name: 'JobOonja',
         designation: 'Java, JavaScript, Spring, React',
